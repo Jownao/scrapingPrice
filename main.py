@@ -3,6 +3,9 @@ from src.database import create_connection, setup_database, save_to_database
 from src.fetcher import fetch_page, parse_page
 from src.telegram_bot import send_message
 from src.utils import validate_selectors
+from dotenv import load_dotenv
+
+load_dotenv()
 
 async def main():
     conn = create_connection()
